@@ -139,6 +139,7 @@ public class MyArrayListTest {
 	 */
 	@Test
 	public void testIndexOf() {
+		mylist.stream().forEach(arr -> System.out.println(arr));
 		assertThat(mylist.indexOf(1), is(0));
 		assertThat(mylist.indexOf(2), is(1));
 		assertThat(mylist.indexOf(3), is(2));
